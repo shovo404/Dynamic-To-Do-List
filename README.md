@@ -1,65 +1,27 @@
 # Dynamic To-Do List
-A responsive and interactive To-Do List web application built using HTML, CSS, and JavaScript. This project aims to enhance productivity through a user-friendly interface and efficient task management features.
 
-Features
-Task Management: Add, edit, and delete tasks with ease.
+A responsive and interactive To-Do List web application built using HTML, CSS, and JavaScript. This project helps users manage their tasks efficiently with features like adding, editing, deleting, and prioritizing tasks.
 
-Prioritization: Assign priority levels to tasks.
+## Features
 
-Filtering: Filter tasks based on completion status or priority.
+- **Task Management**: Add, edit, and delete tasks.
+- **Prioritization**: Set priority levels (High, Medium, Low) for each task.
+- **Filtering**: Filter tasks based on completion status or priority.
+- **Deadline Reminders**: Set deadlines for tasks and get notified as they approach.
+- **Responsive Design**: Works well on both mobile and desktop screens.
+- **Local Storage**: Tasks are saved in local storage, so they persist even after the page is refreshed.
 
-Deadline Reminders: Receive notifications as deadlines approach.
+## Technologies Used
 
-Responsive Design: Optimized for both desktop and mobile devices.
+- **HTML5**: For structure and layout.
+- **CSS3**: For styling and creating a responsive design.
+- **JavaScript**: For functionality and dynamic interactions.
 
-Local Storage: Tasks persist across sessions using browser local storage.
+## Installation
 
-Technologies Used
-HTML5: Structure and layout of the application.
+To run the project locally:
 
-CSS3: Styling and responsive design.
+1. Clone the repository:
 
-JavaScript: Core functionality and DOM manipulation.
-
-Installation
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/shovo404/Dynamic-To-Do-List.git
-cd Dynamic-To-Do-List
-Open index.html in your preferred web browser.
-
-No server setup is required; the application runs entirely in the browser.
-
-Usage
-Add Task: Enter a task description and click "Add Task" or press "Enter".
-
-Edit Task: Click on a task to edit its description.
-
-Delete Task: Click the "Delete" button next to a task to remove it.
-
-Set Priority: Assign a priority level (High, Medium, Low) to each task.
-
-Filter Tasks: Use the filter options to view tasks based on their status or priority.
-
-Set Deadline: Assign a due date to tasks and receive reminders as the deadline approaches.
-
-Contributing
-Contributions are welcome! To contribute:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature-name).
-
-Commit your changes (git commit -am 'Add new feature').
-
-Push to the branch (git push origin feature-name).
-
-Create a new Pull Request.
-
-Please ensure your code adheres to the existing style and includes appropriate tests.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+   ```bash
+   git clone https://github.com/shovo404/Dynamic-To-Do-List.git
