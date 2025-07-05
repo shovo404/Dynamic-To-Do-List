@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <meta name="description" content="Interactive Todo App" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="min-h-screen w-full flex items-center justify-center py-10">
+      <div class="container max-w-md mx-auto px-4 py-8">
+        <div class="card bg-white/20 backdrop-blur-md border-0 shadow-xl">
+          <div class="card-header pb-3">
+            <h1 class="card-title text-2xl font-bold text-white text-center">
+              My Todo List
+            </h1>
+            <div class="flex justify-center gap-4 text-sm text-white/80 mt-2">
+              <div>Active: <span id="active-count">0</span></div>
+              <div>Completed: <span id="completed-count">0</span></div>
+            </div>
+          </div>
+          <div class="card-content">
+            <form id="add-task-form" class="flex gap-2 mb-6">
+              <input
+                type="text"
+                id="task-input"
+                placeholder="Add a new task..."
+                class="bg-white/90 backdrop-blur-sm border-0 shadow-sm text-base py-6 placeholder:text-gray-400"
+              />
+              <button 
+                type="submit" 
+                id="add-task-btn"
+                class="bg-primary hover:bg-primary/90 px-6 py-6"
+                disabled
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+              </button>
+            </form>
+            
+            <div id="task-list" class="h-[calc(100vh-280px)] pr-4 scroll-area">
+              <!-- Tasks will be inserted here dynamically -->
+              <div class="text-center p-8 text-white/80" id="empty-state">
+                <p class="text-lg">Your to-do list is empty</p>
+                <p class="text-sm mt-2">Add some tasks to get started!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6 text-sm text-white/70">
+          Tasks are automatically saved to your browser
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast">
+      <div class="toast-message">Task added successfully</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
